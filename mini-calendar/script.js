@@ -77,11 +77,11 @@ function calendari(widget, data)
 
     var boto_prev = document.createElement('button');
     boto_prev.className = 'boto-prev';
-    boto_prev.innerHTML = '&#9666;';
+    boto_prev.innerHTML = '&#9668;';
 
     var boto_next = document.createElement('button');
     boto_next.className = 'boto-next';
-    boto_next.innerHTML = '&#9656;';
+    boto_next.innerHTML = '&#9658;';
 
     titol.appendChild(boto_prev);
     titol.appendChild(document.createElement('span')).innerHTML = 
