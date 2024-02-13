@@ -1,0 +1,74 @@
+body {
+    font-family: 'Baskerville URW', serif;
+    background-color: #3b323f;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%
+}
+
+button::-moz-focus-inner{
+    border: 0;
+    padding: 0;
+}
+
+#calendar {
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    height: 310px;
+    width: 350px;
+    font-size: 14px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 350px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.3s ease; 
+}
+
+table.active {
+    transform: translateX(0px)top;
+}
+
+table.inactive {
+    transition: all 0.3s 0.01s ease;
+}
+
+table.hidden-left {
+    transform: translateX(-299px);
+}
+
+table.hidden-right {
+    transform: translateX(300px);
+}
+
+td,th {
+    text-align: center;
+    background-color: #fff;
+}
+
+th { 
+    padding: 10px;
+}
+
+tr:first-child th{
+    font-size: 20px;
+    font-weight: bold;
+    border-left: none;
+    border-top: none;
+}
+
