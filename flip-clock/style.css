@@ -8,17 +8,17 @@ body{
 
 
 .clock-wrap{
-	width:350px;
+	width:296px;
 	
-	margin:3px auto 0px auto;
-	padding:none;
+	margin:2px 4px 2px 4px;
+	padding:1px;
 
 	background-color: transparent;
 }
 
 .min-wrap,
 .hour-wrap{
-	width:140px;
+	width:145px;
 	height:204px;
 	
 	display: inline-block;
@@ -32,13 +32,13 @@ body{
 
 .digit-top, 
 .digit-bottom{
-	width:140px;
+	width:145px;
 	height:98px;
 	position: absolute;
 }
 
 .clock-wrap .front, .clock-wrap .back {
-	width: 140px;
+	width: 145px;
 	height: 98px;
 	position: absolute;
 	overflow: hidden;
